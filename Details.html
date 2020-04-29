@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--Beautify added this on its own. Research what they mean -->
+
+<head>
+  <meta charset="utf-8"><!-- Really good information exists on this element, including security ramifications and deprecated attributes on DevDocs: https://devdocs.io/html/element/meta-->
+  <title>Surine Site Creation</title>
+</head>
+
+<body>
+<img src="images\DO-ALL-THE-THINGS.png" alt="lol">
+<h3><a href="index.html">Home Page</a></h3>
+
+  <h1>Table attributes</h1>
+<hr>
+<table>
+  <thead> <!--Technically the <th></th> tags can go in any row, even the body of the table or a table without these areas defined, but separating them allows them to be styled differently or behave differently. -->
+    <tr>
+    <th>Common Name</th>
+    <th>Taxonomy</th>
+    <th>Photo</th>
+    <th>Quarantine Details</th>
+    <th>Price</th>
+    </tr>
+  </thead>
+  <tbody> <!-- It is no longer good practice to use HTML to define style info such as borders, background colors, etc. CSS has taken over this role. MDN reference has thumbs down on these attributes, and shows them as deprecated. -->
+    <tr>
+      <td>Common Name Here</td>
+      <td>Taxonomy Unknown</td>
+      <td>Photo will go here</td>
+      <td>Quarantine Details will be here</td>
+      <td>$1,000.00</td>
+    </tr>
+    <tr>
+      <td>Snowflake ClownFish (Bonded Pair)</td>
+      <td>Unknown</td>
+      <td><img src="images\snowflakeclowns.jpg" height="50" width="50"/></td>
+      <td>Quarantine Details will be here</td>
+      <td>$160.00</td>
+      </tr>
+    <tr>
+      <td>Spotted Hawkfish</td>
+      <td>Unknown</td>
+      <td><img src="images\hawkfish.jpg" height="50" width="50"/> </td>
+      <td>Quarantine Details will be here</td>
+      <td>$40.00</td>
+    </tr>
+  <tfoot>
+
+  </tfoot>
+  </tbody>
+
+</table>
+<hr>
+<h1>Form Functions/Attributes</h1>
+<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">Input Elements and Attributes</a>
+<br>
+<br>
+<!--The Form class/action/method determines what happens when the submit button is clicked.
+When the form piece is entered, it defaults those 3 options, in this case it defaulted to the Index.html page.
+We are going to change it to a mailto action, which will open your native email app when clicked.-->
+
+<!--<form class="" action="index.html" method="post"> THIS IS THE FIRST/DEFAULT FORM HEADER ROW -->
+<!--  <form class="" action="mailto:mistysurine@yahoo.com" method="post"> THIS IS THE SECOND FORM HEADER ROW -->
+<!--To make the form more usable in the email (get rid of percentage signs and numbers), we're going to delete the class and add an encoding type of plain text -->
+  <form action="mailto:mistysurine@yahoo.com" method="post" enctype="text/plain">
+    <label for="">Full Name</label>
+    <input type="text" name="FullName" value=""> <!-- The name attribute is how the field data is identified in the form-->
+  <br>
+  <br>
+    <label for="">Do you like checkboxes?</label>
+    <input type="checkbox" name="ILikeCheckboxes" value="">
+  <br>
+  <br>
+    <label for="">Password with auto mask</label>
+    <input type="password" name="password" value=""> <!-- Will mask the input field by default-->
+  <br>
+  <br>
+    <label for="">Button with no default behavior</label>
+    <input type="button" name="" value="">
+  <br>
+  <br>
+   <label for="">Color Picker - HTML 5</label>
+   <input type="color" name="" value="">
+  <br>
+  <br>
+    <label for="">Date picker with no time - HTML 5, there is also a datetime-local attribute. <b>The old Datetime attribute is deprecated.</b></label>
+    <input type="date" name="" value="">
+  <br>
+  <br>
+    <label for="">Email - HTML 5
+      <br>Email field does some basic validation on the front end for symbols, etc when the enter key is hit</label>
+      <br>
+    <input type="email" name="" value="">
+  <br>
+  <br>
+    <label for="">A control that lets the user select a file. Use the <b>accept</b> attribute to define the types of files that the control can select.</label>
+    <input type="file" name="" value="">
+  <br>
+  <br>
+    <label for="">"Hidden" input is for a control that is not displayed but whose value is submitted to the server.</label>
+    <input type="hidden" name="" value="">
+  <br>
+  <br>
+    <label for="">A graphical submit button. You must use the src attribute to define the source of the image and the alt attribute to define alternative text. You can use the height and width attributes to define the size of the image in pixels.</label>
+    <input type="image" name="" value="">
+  <br>
+  <br>
+    <label for="">Month and Number attributes, both HTML5, allow entering a month and year with no time zone, or a number</label>
+    <input type="month" name="" value="">
+  <br>
+  <br>
+    <input type="number" name="" value="">
+  <br>
+  <br>
+    <label for="">range picker</label>
+    <input type="range" name="" value="">
+  <br>
+  <br>
+    <label for="">This box will have default size set by the code, but is resizeable in the lower right automatically.</label>
+  <br>
+  <br>
+    <textarea name="name" rows="8" cols="50"></textarea>
+  <br>
+  <br>
+    <input type="submit" name="">
+  <br>
+</form>
+
+<ul>
+<li>radio: A radio button, allowing a single value to be selected out of multiple choices.</li>
+<li>range: HTML5 A control for entering a number whose exact value is not important.</li>
+<li>reset: A button that resets the contents of the form to default values.</li>
+<li>search: HTML5 A single-line text field for entering search strings. Line-breaks are automatically removed from the input value.</li>
+<li>submit: A button that submits the form.</li>
+<li>tel: HTML5 A control for entering a telephone number.</li>
+<li>text: A single-line text field. Line-breaks are automatically removed from the input value.</li>
+<li>time: HTML5 A control for entering a time value with no time zone.</li>
+<li>url: HTML5 A field for entering a URL.</li>
+<li>week: HTML5 A control for entering a date consisting of a week-year number and a week number with no time zone.</li>
+</ul>
+
+</body>
+
+</html>
