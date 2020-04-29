@@ -5,21 +5,27 @@
 <head>
   <meta charset="utf-8"><!-- Really good information exists on this element, including security ramifications and deprecated attributes on DevDocs: https://devdocs.io/html/element/meta-->
   <title>Surine Site Creation</title>
+<link rel="stylesheet" href="css/styles.css">
+<!--The style tag wanted to add a media="screen" attribute by default, which I deleted to stay with the course program.-->
+<!--Setting the height on the hr tag to 0 makes the 'box' into a single line and will show things like dotted lines, dashes, etc as a single row.-->
 </head>
 
 <body>
   <table cellspacing="20"> <!-- Cell Spacing is deprecated in HTML 5-->
     <tr>
       <td>
-        <img src="images\DO-ALL-THE-THINGS.png" alt="lol">
+        <img class="allthethings" src="images\DO-ALL-THE-THINGS.png" alt="lol">
       </td>
       <td>
-        <h1>Surine Test App</h1>
+        <h1 id="pagetitle">Learning and Test App</h1>
       </td>
     </tr>
   </table>
+  <h2>Go To Page...</h2>
 <h3><a href="details.html">Tables and Forms</a></h3>
-
+<h3><a href="csslearning.html">Learning CSS</a></h3>
+<br>
+<br>
   <hr>
   <h3>Fonts</h3>
     <p><i>Italics Text</i></p> <!-- Research Italics vs Emphasis, and Bold vs Strong. Emphasis and Strong are preferred, which is not what I'm used to.-->
@@ -42,17 +48,26 @@
     </ol>
   <hr>
   <h3>Links</h3>
-  <p>Understand that the "a" tag is really for anchor, and has a lot of attributes, not just href. </p>
-    <ul>
-      <li><a href="https://codepen.io/"> Code Pen</a></li>
-      <li><a href="https://devdocs.io"> Dev Docs</a></li>
-      <li><a href="https://developer.mozilla.org/en-US/"> MDN Web Docs - Mozilla</a></li>
-      <li><a href="http://web.archive.org/"> Web Archive Org</a></li>
-      <li><a href="https://docs.emmet.io/cheat-sheet/"> Emmet Cheat sheet</a></li>
-      <li><a href="https://unicode-table.com/en/"> Unicode Table</a></li>
-      <li><a href="https://discordapp.com/channels/474304677756796931/510245195745329172">Discord App - App Brewery chat</a></li>
-
+  *Adding the  target="_blank" attribute to the a href will open the link in a new tab.
+  <br>
+      <ul>
+      <li><a href="https://codepen.io/" target="_blank"> Code Pen</a> Build, test, and discover front-end code.</li>
+      <li><a href="https://devdocs.io" target="_blank"> Dev Docs - Pretty awesome reference library (hierarchical)</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/" target="_blank"> MDN Web Docs - Mozilla</a></li>
+      <li><a href="http://web.archive.org/" target="_blank"> Web Archive Org</a></li>
+      <li><a href="https://docs.emmet.io/cheat-sheet/" target="_blank"> Emmet Cheat sheet</a></li>
+      <li><a href="https://unicode-table.com/en/" target="_blank"> Unicode Table</a></li>
+      <li><a href="https://discordapp.com/channels/474304677756796931/510245195745329172" target="_blank">Discord App - App Brewery chat</a></li>
+      <li><a href="https://colorhunt.co/" target="_blank"> Color Hunt. For finding Hex numbers on lots of colors, pretty cool. </a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank"> MDN CSS color names</a></li>
+      <li><a href="https://www.w3schools.com/cssref/css_default_values.asp" target="_blank"> CSS defaults for browsers (W3 Schools) </a></li>
+      <li><a href="https://emojipedia.org/">Emojipedia</a> You can use this site to right click and copy image address for use in your site... they probably dont change much lol</li>
     </ul>
+  <hr>
+  <h3>Notes & Reminders</h3>
+  <p>Understand that the "a" tag is really for anchor, and has a lot of attributes, not just href. </p>
+  <br>
+  <br>
 </body>
 
 </html>

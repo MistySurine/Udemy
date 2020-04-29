@@ -5,12 +5,26 @@
 <head>
   <meta charset="utf-8"><!-- Really good information exists on this element, including security ramifications and deprecated attributes on DevDocs: https://devdocs.io/html/element/meta-->
   <title>Surine Site Creation</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-<img src="images\DO-ALL-THE-THINGS.png" alt="lol">
-<h3><a href="index.html">Home Page</a></h3>
 
+   <table cellspacing="20"> <!-- Cell Spacing is deprecated in HTML 5-->
+     <tr>
+       <td>
+         <img class="allthethings" src="images\DO-ALL-THE-THINGS.png" alt="lol">
+       </td>
+       <td>
+         <h1>Tables and Forms</h1>
+       </td>
+     </tr>
+   </table>
+   <h2>Go To Page...</h2>
+ <h3><a href="index.html">Home</a></h3>
+ <h3><a href="csslearning.html">Learning CSS</a></h3>
+ <br>
+ <br>
   <h1>Table attributes</h1>
 <hr>
 <table>
@@ -34,14 +48,16 @@
     <tr>
       <td>Snowflake ClownFish (Bonded Pair)</td>
       <td>Unknown</td>
-      <td><img src="images\snowflakeclowns.jpg" height="50" width="50"/></td>
+      <td><img class="basicImage" src="images\snowflakeclowns.jpg" height="50" width="50"/></td>
+      <!--BasicImage class-->
       <td>Quarantine Details will be here</td>
       <td>$160.00</td>
       </tr>
     <tr>
       <td>Spotted Hawkfish</td>
       <td>Unknown</td>
-      <td><img src="images\hawkfish.jpg" height="50" width="50"/> </td>
+      <td><img class="basicImage circular" src="images\hawkfish.jpg" height="50" width="50"/> </td>
+      <!--BasicImage class + Circular CLASS-->
       <td>Quarantine Details will be here</td>
       <td>$40.00</td>
     </tr>
@@ -54,7 +70,7 @@
 <hr>
 <h1>Form Functions/Attributes</h1>
 <br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">Input Elements and Attributes</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">Input Elements and Attributes</a>
 <br>
 <br>
 <!--The Form class/action/method determines what happens when the submit button is clicked.

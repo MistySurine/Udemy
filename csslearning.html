@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--Beautify added this on its own. Research what they mean -->
+
+<head>
+  <meta charset="utf-8"><!-- Really good information exists on this element, including security ramifications and deprecated attributes on DevDocs: https://devdocs.io/html/element/meta-->
+  <title>Surine Site Creation</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!--The Style attribute allows CSS to be injected in-line -->
+<!--The style tag wanted to add a media="screen" attribute by default, which I deleted to stay with the course program.-->
+<!--Setting the height on the hr tag to 0 makes the 'box' into a single line and will show things like dotted lines, dashes, etc as a single row.-->
+
+<body>
+  <table cellspacing="20"> <!-- Cell Spacing is deprecated in HTML 5-->
+    <tr>
+      <td>
+        <img class="allthethings" src="images\DO-ALL-THE-THINGS.png" alt="lol">
+      </td>
+      <td>
+        <h1>CSS Learning</h1>
+      </td>
+    </tr>
+  </table>
+  <h2>Go To Page...</h2>
+<h3><a href="index.html">Home</a></h3>
+<h3><a href="details.html">Tables and Forms</a></h3>
+<br>
+<br>
+  <hr>
+  <h3>Border-Styles</h3>
+  The border-style property may be specified using one, two, three, or four values.
+  <br><br>
+  <ul>
+    <li>When one value is specified, it applies the same style to all four sides.</li>
+    <li>When two values are specified, the first style applies to the top and bottom, the second to the left and right.</li>
+    <li>When three values are specified, the first style applies to the top, the second to the left and right, the third to the bottom.</li>
+    <li>When four values are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).</li>
+  </ul>
+
+<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style" target="_blank">Reference at MDN Border Styles</a>
+  <hr>
+  <h3>Pretty Hex Combinations</h3>
+    <ul>
+      <li>Sunset: f9ed69 - Yellow, f08a5d - orange, b83b5e - pink, 6a2c70 - purple</li>
+      <li>Try these together: ffc7c7, ffe2e2, f6f6f6, 8785a2</li>
+    </ul>
+  <br>
+  <hr>
+  <h3>CSS Hierarchy (Inline, Internal, External)</h3>
+In order of importance
+<ul>
+  <li>In line style tags on a page will override Internal CSS (in the header)</li>
+  <li>Internal CSS in the header of a specific page will override the global (External) CSS</li>
+  <li>If no other style indicators exist, the global setting will be displayed</li>
+</ul>
+
+  <br>
+    <hr>
+  <h3>CSS Syntax</h3>
+  <br>
+      <img class="basicImage" src="images\CSSSyntax.jpg" alt="syntax" height="170">
+
+<ul>
+  <li>Best practice is to alphabetize properties within an element (color, font, size, etc)</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Basic Syntax and Key Words reference on MDN.</a></li>
+    <ul>
+      <li>Key words with a semi colon in front are pseudo classes, such as :hover.</li>
+    </ul>
+  <li>ID vs Class</li>
+    <ul>
+      <li>ID can only have one of that named ID on a page, class is not limited. </li>
+      <li>Use ID where you have a single element on a page to influence. (why is this useful?) </li>
+      <li>An HTML element can only have one ID, but it can have multiple classes assigned. </li>
+      <li>ID's cannot have multiple ID's identified for the same element the same way multiple classes can be combined.</li>
+      <li></li>
+    </ul>
+  <li>Pseudo classes - state driven</li>
+    <ul>
+      <li>State driven things such as mouseover can change the class being used</li>
+    </ul>
+</ul>
+
+  <br>
+</body>
+
+</html>
